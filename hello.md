@@ -1,0 +1,1 @@
+# I am learning to use git!This file is only for learning how to properly use git and github, and master them. Without this, it will be a pain being able to work effectively as a DevOps Engineer. So, do not be surprised if you see any errors or codes that do not make sense.
