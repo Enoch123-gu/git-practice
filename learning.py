@@ -1,15 +1,18 @@
 # learning.py
-# A tiny CLI app to practice Git, Python, tests, and CI/CD.
 import argparse
+
 
 def greet(name: str) -> str:
     return f"Hello, {name}!"
 
+
 def add(a: float, b: float) -> float:
     return a + b
 
+
 def multiply(a: float, b: float) -> float:
     return a * b
+
 
 def main():
     parser = argparse.ArgumentParser(description="Tiny practice CLI")
@@ -34,6 +37,7 @@ def main():
         print(add(args.a, args.b))
     elif args.command == "multiply":
         print(multiply(args.a, args.b))
+
 
 if __name__ == "__main__":
     main()
