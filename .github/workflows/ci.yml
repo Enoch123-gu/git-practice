@@ -19,14 +19,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      # If you don't have requirements.txt, this installs tools directly
       - name: Install dependencies
-  run: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-
-      # Ensure repo root is on Python path (belt + suspenders)
       - name: Add repo to PYTHONPATH
         run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
 
@@ -34,4 +31,4 @@ jobs:
         run: flake8 .
 
       - name: Run tests
-        run: pytest
+        run: pytest -q
