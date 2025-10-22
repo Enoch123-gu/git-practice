@@ -1,0 +1,17 @@
+[project]
+name = "learning-cli"
+version = "0.2.0"
+description = "Tiny practice CLI with greet/add/multiply"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{ name = "Enock Elumbu" }]
+dependencies = []
+
+# This makes `learning` available as a terminal command after install
+[project.scripts]
+learning = "learning:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
